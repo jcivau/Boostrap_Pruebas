@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Video Fondo</title>
+	
+	<!-- Boostrap Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Estilos en linea -->
+	<style>
+		h1 {
+			text-align: center;
+			padding: 10px 0;
+		}
+
+		.fondoNegro{
+			opacity: 0.5;
+			background-color: black;
+		}
+
+		#fondoVideo { 
+		    position: fixed;
+		    top: 50%;
+		    left: 50%;
+		    min-width: 100%;
+		    min-height: 100%;
+		    width: auto;
+		    height: auto;
+		    z-index: -100;
+		    -ms-transform: translateX(-50%) translateY(-50%);
+		    -moz-transform: translateX(-50%) translateY(-50%);
+		    -webkit-transform: translateX(-50%) translateY(-50%);
+		    transform: translateX(-50%) translateY(-50%);
+		    /*background: url(img/fondo.jpg) no-repeat;*/
+		    background-size: cover;
+		}
+
+		.logo{
+			width: 300px;
+			text-align;
+			display: block;
+			margin: 0 auto;
+			margin-top: 100px;
+			margin-bottom: 20px;
+		}
+
+		.fondoForm{
+			background: rgba(252, 252, 252, 0.4);
+			-moz-border-radius: 5px 10px;
+			-webkit-border-radius: 5px 10px;
+			padding: 20px;
+		}
+
+		label{
+			font-size: 1.3em;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<!-- #fondoVideo mismo poster que id background--> 
+<video autoplay loop poster="img/fondo.jpg" id="fondoVideo"> 
+    <source src="video/videofolltrend.mp4" type="video/mp4">
+</video>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<img class="logo" src="img/logo_folltrend.png" alt="Folltrend - Redes Sociales">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4 fondoForm">
+			<form>
+				<div class="form-group">
+					<label for="nombre">Nombre</label>
+					<input type="email" class="form-control" id="nombre" placeholder="Nombre" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="text" class="form-control" id="email" placeholder="Email" required>
+				</div>
+				<button type="submit" class="btn btn-primary btn-block" disabled>SOLICITAR DEMO</button>
+			</form>
+			
+		</div>
+	</div>
+</div>
+
+
+<!-- Latest compiled and minified JavaScript 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>-->
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+
+<!-- Jquery UI -->
+<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script>
+
+</body>
+</html>
