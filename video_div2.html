@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Video en DIV</title>
+	
+	<!-- Boostrap Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Estilos en linea -->
+	<style>
+		.header-unit {
+		  height: 250px;
+		  /*border: 2px solid #000;
+		  border-right:none;
+		  border-left: none;*/
+		  position: relative;
+		  padding: 20px;
+		}
+		#video-container {
+			position: absolute;
+		}
+		#video-container {
+			top:0%;
+			left:0%;
+			height:100%;
+			width:100%;
+			overflow: hidden;
+		}
+		video {
+			position:absolute;
+			z-index:0;
+		}
+		video.fillWidth {
+			width: 100%;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="header-unit">
+		<div id="video-container">
+			<video autoplay loop class="fillWidth">
+				<source src="video/editado1.mp4" type="video/mp4"/>
+			</video>
+		</div><!-- end video-container -->
+	</div><!-- end .header-unit -->
+
+<!--
+	<div class="container-fluid">
+		<div class="row">
+			<div class="amarilla">
+				<div id="fondoVideo">
+					<video autoplay loop width=""> 
+			    		<source src="video/videofolltrend.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 azul">
+				Soy la azul
+			</div>
+		</div>
+	</div>-->
+
+
+
+<!-- Latest compiled and minified JavaScript 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>-->
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+
+<!-- Jquery UI -->
+<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script>
+
+</body>
+</html>
